@@ -13,7 +13,8 @@ class User (
     ) : Parcelable{
         companion object{
         val lstUser = arrayOf(
-            User("")
+            User("",UsrType.AUTOR,"",1)
+
         )
 
         }

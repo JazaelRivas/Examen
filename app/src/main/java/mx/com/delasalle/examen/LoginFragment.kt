@@ -5,19 +5,23 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageView
 
 
+class LoginFragment : Fragment(R.layout.fragment_login) {
 
-
-class LoginFragment : Fragment(R.layout.login) {
-
+    lateinit var usrIcon: ImageView
+    lateinit var usrChange: EditText
+    lateinit var usrPassw: EditText
+    lateinit var loginBtn: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+
         }
     }
 
@@ -26,26 +30,39 @@ class LoginFragment : Fragment(R.layout.login) {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_2, container, false)
+        return inflater.inflate(R.layout.fragment_entrada, container, false)
     }
+    private val wtch = object : TextWatcher {
+        override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Fragment2.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Fragment2().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+        }
+
+        override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+            usarios.forEach {
+                if ( it.nickname == p0.toString() ) {
+                    iconUser.setImageResource(it.avatar)
+                    edtPass.isEnabled = false
+                    btnLogin.isEnabled = false
+                } else {
+                    iconUser.setImageResource(R.drawable.ic_launcher_foreground)
+                    edtPass.isEnabled = true
+                    btnLogin.isEnabled = true
                 }
             }
+        }
+
+        override fun afterTextChanged(p0: Editable?) {
+
+        }
+
     }
+
+    private fun views(){
+        usrIcon = requireView().findViewById(R.id.usrIcon)
+        usrChange = requireView().findViewById(R.id.usrChange)
+        usrPassw = requireView().findViewById(R.id.usrPassw)
+        loginBtn = requireView().findViewById(R.id.loginbth)
+    }
+
+
 }
