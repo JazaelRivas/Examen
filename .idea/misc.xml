@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_bitcoin.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_empty_set.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_game_console.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_ghost.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_nvidia.xml" value="0.22135416666666666" />
+        <entry key="..\:/Android Studio/Examen/app/src/main/res/drawable/ic_pikachu.xml" value="0.22135416666666666" />
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/activity_main.xml" value="0.27309782608695654" />
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/fragment_2.xml" value="0.2667572463768116" />
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/fragment_3.xml" value="0.2667572463768116" />
@@ -11,6 +19,11 @@
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/fragment_login_fragment.xml" value="0.20520833333333333" />
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/fragment_user.xml" value="0.2667572463768116" />
         <entry key="..\:/Android Studio/Examen/app/src/main/res/layout/login.xml" value="0.27309782608695654" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_articulo.xml" value="0.14912280701754385" />
+        <entry key="app/src/main/res/layout/fragment_entrada.xml" value="0.3677536231884058" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.3677536231884058" />
+        <entry key="app/src/main/res/layout/fragment_user.xml" value="0.2" />
       </map>
     </option>
   </component>

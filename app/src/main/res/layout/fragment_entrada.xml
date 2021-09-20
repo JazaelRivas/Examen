@@ -7,41 +7,53 @@
     tools:context=".EntradaFragment">
 
     <ImageView
-        android:id="@+id/imagenUsuario"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/avatar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/edtUsername"
+        app:layout_constraintBottom_toTopOf="@id/usernam"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
     <EditText
-        android:id="@+id/edtUsername"
-        android:layout_width="match_parent"
+        android:id="@+id/usernam"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/imagenUsuario"
+        android:hint="user"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"
         app:layout_constraintBottom_toBottomOf="parent"
         />
 
     <EditText
         android:id="@+id/edtPass"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:layout_constraintTop_toBottomOf="@id/edtUsername"
+        android:hint="contraseña"
+        android:inputType="textPassword"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/usernam"
         app:layout_constraintBottom_toTopOf="@id/login"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
+
         />
 
     <Button
         android:id="@+id/login"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Entrar"
         android:layout_margin="8dp"
+        android:enabled="false"
         app:layout_constraintTop_toBottomOf="@id/edtPass"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/avatar"
+        app:layout_constraintEnd_toEndOf="@+id/avatar"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
